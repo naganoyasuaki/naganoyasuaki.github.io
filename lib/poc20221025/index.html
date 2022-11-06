@@ -9,14 +9,20 @@
   <link rel='apple-touch-icon' href='./logo192.png' />
   <link rel='manifest' href='./manifest.json' />
   <title>React App</title>
-  <script src='./static/js/main.f8113225.js'></script>
   <link href='./static/css/main.073c9b0a.css' rel='stylesheet'>
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id='root'></div>
 <script>
-  OutsideApp.renderOutsideApp({}, 'root')
+  var script = document.createElement( 'script' );
+  script.type = 'text/javascript';
+  script.src = 'https://naganoyasuaki.github.io/lib/poc20221025/static/js/main.f8113225.js';
+  script.onload = function (e){
+    OutsideApp.renderOutsideApp({}, 'root')
+  }
+  var s = document.getElementsByTagName( 'script' )[ 0 ];
+  s.parentNode.insertBefore( script, s );
 </script>
 </body>
 </html>
