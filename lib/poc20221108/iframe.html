@@ -12,11 +12,20 @@
   <style>
       body {
           margin: 0;
-          padding: 0
+          padding: 0;
+          height: 100vh;
       }
+
       .iframe-block {
           width: 100%;
           height: 100%;
+      }
+
+      iframe {
+          display: block;
+          border: none;
+          height: 100%;
+          width: 100%;
       }
   </style>
   <title>Test - iframe</title>
@@ -25,7 +34,7 @@
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div class="iframe-block">
   <iframe id="iframeApp" title="iframe App" src="./index.html" allow="camera; microphone">
+  </iframe>
 </div>
-</iframe>
 </body>
 </html>
